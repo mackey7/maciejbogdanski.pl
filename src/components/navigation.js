@@ -3,26 +3,26 @@ import React from "react"
 import Styled from 'styled-components'
 
 
-
-
 const TopNavigation = Styled.section`
-display:flex;
-justify-content:space-between;
- align-items:center;
-margin:0px auto;
-width:80%;
-padding:20px 0px;
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0px auto;
+    width:80%;
+    padding:20px 0px;
 `
 const Nav = Styled.nav`
-ul{
-  display:flex;
-   list-style: none;
-  li{
-    margin-left:10px;
-  }
-}
-
+  display:none;
+    @media (min-width: 768px) {
+      display:block;
+      ul{
+        display:flex;
+        list-style: none;
+        li{
+          margin-left:10px;
+        }
+      }
+    }
 `
 const LinkNav = Styled(Link)`
       text-decoration:none;
@@ -38,20 +38,27 @@ const LinkNav = Styled(Link)`
     
 `
 const Logo = Styled.img`
-width:50px;
-height:70px;
-border-radius:50%;
+  width:50px;
+  height:70px;
+  border-radius:50%;
 `
 const LogoSection = Styled.div`
-  display:none;
-@media (min-width: 768px) {
-    height: 100;
-      display: flex;
-      align-items: center;
-  }
+    display:none;
+    @media (min-width: 768px) {
+        height: 100;
+          display: flex;
+          align-items: center;
+      }
 
 `
-
+const Hamburger = Styled.div`
+display:block;
+@media (min-width: 768px) {
+ 
+      display: none;
+      
+  }
+`
 const Navigation = () => (
   <TopNavigation>
     <LogoSection >
@@ -72,6 +79,7 @@ const Navigation = () => (
       </span>
       </div>
     </LogoSection>
+    <Hamburger>HAMBURGER</Hamburger>
     <Nav>
       <ul>
         <li> <LinkNav to="/l" >Projects </LinkNav> </li>
