@@ -2,20 +2,41 @@ import React from "react"
 import Styled from 'styled-components'
 
 const SectionWrapper = Styled.section`
-border-top:2px solid #A9A9A9;
-border-bottom:2px solid #A9A9A9;
-padding:20px 0px; 
-display:flex;
-align-items: center;
-justify-content: space-between;
+    border-bottom:2px solid #A9A9A9;
+    padding:20px 0px; 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 `
 
 const Article = Styled.article`
-width:50%;
-padding:20px;
+    width:100%;
+    padding:20px;
+     h2{
+        font-size:40px;
+        text-transform:uppercase;
+     font-weight:900;
+        letter-spacing:2px;
+        margin:0;
+    }
+    h2, h3{
+       text-align:center; 
+    }
+    h3{
+letter-spacing:10px;
+    }
+   
+        @media (min-width: 768px) {
+        width:50%;
+        }
 `
 const Img = Styled.img`
+display:none;
+ @media (min-width: 768px) {
+     display:block;
 width:50%;
+ }
+
 `
 
 const About = () => (
