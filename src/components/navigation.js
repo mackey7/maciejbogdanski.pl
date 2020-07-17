@@ -52,12 +52,12 @@ const LogoSection = Styled.div`
 
 `
 const Hamburger = Styled.div`
-display:block;
-@media (min-width: 768px) {
- 
-      display: none;
-      
-  }
+  display:block;
+    @media (min-width: 768px) {
+    
+          display: none;
+          
+      }
 `
 const Navigation = () => (
   <TopNavigation>
