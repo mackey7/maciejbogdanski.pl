@@ -36,7 +36,7 @@ padding:0px 0px 50px 0px;
 
 
 const Contact = () => (
-    <SectionWrapper>
+    <SectionWrapper id="Contact">
         <H2> Let`s Talk! </H2>
         <Span> Send me a request</Span>
         <div>

@@ -52,7 +52,7 @@ const TitleSection = Styled.div`
 `
 
 const Header = () => (
-    <HeaderWrapper>
+    <HeaderWrapper >
         <TitleSection>
             <p> Hello, I`m </p>
             <p>Maciej Bogdański</p>

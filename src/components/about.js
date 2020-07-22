@@ -40,7 +40,7 @@ width:50%;
 `
 
 const About = () => (
-    <SectionWrapper>
+    <SectionWrapper id="About">
 
         <Img src="../images/maciej_bogdanski.jpg" />
 

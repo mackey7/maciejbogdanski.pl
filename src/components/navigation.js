@@ -41,12 +41,13 @@ const Nav = Styled.nav`
       }
     }
 `
-const LinkNav = Styled(Link)`
+const LinkNav = Styled.a`
       text-decoration:none;
       color:black;
       padding:3px 10px;
       font-weight:700;
       text-transform:uppercase;
+      cursor:pointer;
       :hover{
         border:2px solid black;
         border-radius:20px;
@@ -155,9 +156,9 @@ const Navigation = () => {
 
         <Nav open={open}>
           <ul>
-            <li> <LinkNav to="/l" >Projects </LinkNav> </li>
-            <li> <LinkNav to="/2" >About me </LinkNav>  </li>
-            <li> <LinkNav to="/3" >Contact </LinkNav> </li>
+            <li> <LinkNav href="#Projects" >Projects </LinkNav> </li>
+            <li> <LinkNav href="#About" >About me </LinkNav>  </li>
+            <li> <LinkNav href="#Contact" >Contact </LinkNav> </li>
           </ul>
         </Nav>
 

@@ -58,7 +58,7 @@ const ProjectBoxTitle = Styled.figcaption`
 
 
 const Projects = () => (
-    <SectionWrapper>
+    <SectionWrapper id="Projects">
         <ProjectBox >
             <div className="box">
                 <a href="">Web</a>
