@@ -23,7 +23,7 @@ const Article = Styled.article`
        text-align:center; 
     }
     h3{
-letter-spacing:10px;
+        letter-spacing:10px;
     }
    
         @media (min-width: 768px) {
