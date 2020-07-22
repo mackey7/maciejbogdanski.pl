@@ -1,6 +1,6 @@
 import React from "react"
 import Styled from 'styled-components'
-import { Link } from "gatsby"
+
 
 const SectionWrapper = Styled.footer`
     width:100%;
@@ -9,7 +9,7 @@ const SectionWrapper = Styled.footer`
     color:#8e8e8e;
     padding:10px 0px;
 `
-const LinkNav = Styled(Link)`
+const LinkNav = Styled.a`
       text-decoration:none;
       padding:0px 10px;  
 `
@@ -60,9 +60,9 @@ const Footer = () => (
 
             <FooterNav>
                 <ul>
-                    <li> <LinkNav to="/l" >Projects </LinkNav> </li>
-                    <li> <LinkNav to="/2" >About me </LinkNav>  </li>
-                    <li> <LinkNav to="/3" >Contact </LinkNav> </li>
+                    <li> <LinkNav href="#Projects">Projects </LinkNav> </li>
+                    <li> <LinkNav href="#About">About me </LinkNav>  </li>
+                    <li> <LinkNav href="#Contact">Contact </LinkNav> </li>
                 </ul>
             </FooterNav>
         </MainSection>
